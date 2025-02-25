@@ -93,7 +93,7 @@ const addNewForm = () => {
       </div>
 
       <div>
-        <label class="block text-gray-600">Логин (email)</label>
+        <label class="block text-gray-600">Логин</label>
         <InputText v-model="newEmail" placeholder="Введите email" class="w-full" />
       </div>
 
