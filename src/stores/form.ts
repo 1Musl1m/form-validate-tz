@@ -20,4 +20,6 @@ export const useFormStore = defineStore("form", () => {
     };
 
     return { forms, addForm, removeForm };
+},{
+    persist: true
 });

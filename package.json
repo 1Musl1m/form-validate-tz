@@ -13,6 +13,7 @@
     "@tailwindcss/vite": "^4.0.8",
     "@vueuse/core": "^12.7.0",
     "pinia": "^3.0.1",
+    "pinia-plugin-persistedstate": "^4.2.0",
     "primeicons": "^7.0.0",
     "primevue": "^4.3.0",
     "tailwindcss": "^4.0.8",
