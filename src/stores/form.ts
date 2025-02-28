@@ -8,18 +8,22 @@ interface Form {
     password: string | null;
 }
 
-export const useFormStore = defineStore("form", () => {
-    const forms = ref<Form[]>([]);
+export const useFormStore = defineStore(
+    "form",
+    () => {
+        const forms = ref<Form[]>([]);
 
-    const addForm = (form: Form) => {
-        forms.value.push(form);
-    };
+        const addForm = (form: Form) => {
+            forms.value.push(form);
+        };
 
-    const removeForm = (index: number) => {
-        forms.value.splice(index, 1);
-    };
+        const removeForm = (index: number) => {
+            forms.value.splice(index, 1);
+        };
 
-    return { forms, addForm, removeForm };
-},{
-    persist: true
-});
+        return { forms, addForm, removeForm };
+    },
+    {
+        persist: true,
+    }
+);
